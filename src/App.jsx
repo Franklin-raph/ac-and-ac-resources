@@ -177,7 +177,7 @@ function App() {
                 <p className='text-[24px] font-[600] text-heading-color'>GOTRUHUB</p>
               </div>
             </div>
-            <div className='flex items-center justify-center gap-[2rem] mt-[3rem]'>
+            <div className='flex items-center justify-center gap-[2rem] mt-[6rem]'>
               {
                 tabsArray.map(tab => (
                   <div className={`flex items-center gap-[10px] ${tab.id === 'Trade' ? 'text-primary-color' : 'text-text-color'}`}>
@@ -189,7 +189,7 @@ function App() {
             <div>
                 {
                     activeTab === "Gotru Trade" &&
-                    <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[5rem]'>
+                    <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[2rem]'>
                         <img src="./images/trade_img.svg" className='sm:w-[40%]' alt="" />
                         <div className='w-[100%]'>
                             <p className='text-[32px] font-[500] mb-3'>{activeTab}</p>
@@ -205,7 +205,7 @@ function App() {
                 }
                 {
                     activeTab === "Result check" &&
-                    <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[5rem]'>
+                    <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[2rem]'>
                         <img src="./images/go-tru-pass.svg" className='sm:w-[50%]' alt="" />
                         <div className='w-[100%]'>
                             <p className='text-[32px] font-[500] mb-3'>{activeTab}</p>
@@ -221,7 +221,7 @@ function App() {
                 }
                 {
                     activeTab === "Gotru Pass" &&
-                    <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[5rem]'>
+                    <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[2rem]'>
                         <img src="./images/go-tru-pass.svg" className='sm:w-[50%]' alt="" />
                         <div className='w-[100%]'>
                             <p className='text-[32px] font-[500] mb-3'>{activeTab}</p>
@@ -237,7 +237,7 @@ function App() {
                 }
                 {
                     activeTab === "Gotru Monitor" &&
-                    <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[5rem]'>
+                    <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[2rem]'>
                         <img src="./images/trade_img.svg" className='sm:w-[50%]' alt="" />
                         <div className='w-[100%]'>
                             <p className='text-[32px] font-[500] mb-3'>{activeTab}</p>
