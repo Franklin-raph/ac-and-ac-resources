@@ -55,7 +55,7 @@ function App() {
 
   return (
     <BrowserRouter>
-        <nav className='flex items-center justify-between shadow-sm w-full bg-white z-10 px-[3rem] md:px-[10rem] py-4 mb-[4rem]'>
+        <nav className='flex items-center justify-between shadow-sm w-full bg-white z-10 px-[3rem] lg:px-[10rem] py-4 mb-[4rem]'>
         <Link>
           <img src="./images/logo.png" className='w-[60px]' alt="" />
         </Link>
@@ -80,7 +80,7 @@ function App() {
         <button className='bg-primary-color text-white px-6 py-2 rounded-full font-[500]'>Get App</button>
       </nav>
       <div data-aos="fade-up">
-          <main className='flex items-center justify-between mx-auto md:flex-row flex-col-reverse md:px-[10rem] px-[2rem]'>
+          <main className='flex items-center justify-between mx-auto md:flex-row flex-col-reverse lg:px-[10rem] px-[2rem]'>
               <div className='md:w-[50%] md:mt-0 mt-10'>
                   <h1 className='text-[36px] font-[600] text-heading-color'>AC & AC RESOURCES</h1>
                   <p className='text-text-color my-3'>AC & AC RESOURCES is a business consulting, product marketing and currently introducing software solutions to her portfolio. We generate and develop business ideas, engage in product marketing and also offer corporate consultancy services.</p>
@@ -97,7 +97,7 @@ function App() {
           </main>
 
           <section id='our-mission-vision' className='bg-[#28374C] mt-[6rem] py-[3rem] flex flex-col gap-[4rem]'>
-            <div className='md:px-[10rem] px-[2rem] flex md:flex-row-reverse items-center justify-between flex-col'>
+            <div className='lg:px-[10rem] px-[2rem] flex md:flex-row-reverse items-center justify-between flex-col'>
                 <div className='md:w-[50%] md:mt-0 mb-10 text-center md:text-left border-l-4 border-primary-color pl-5' data-aos="fade-left" data-aos-delay="1">
                     <h1 className='text-[24px] font-[600]  text-white'>OUR MISSION</h1>
                     <p className=' text-white my-3'>As an honest establishment, we seek to create and promote great ideas, enduring facilities and satisfaction. We strive to grow our business with same honesty and integrity we use to mold our brands, with sustainability and great institution for all.</p>
@@ -107,7 +107,7 @@ function App() {
                 </div>
             </div>
 
-            <div className='flex items-center justify-between mx-auto md:flex-row flex-col md:px-[10rem] px-[2rem]'>
+            <div className='flex items-center justify-between mx-auto md:flex-row flex-col lg:px-[10rem] px-[2rem]'>
                 <div className='md:w-[50%] text-center md:text-left border-r-4 border-primary-color pr-5'  data-aos="fade-right" data-aos-delay="1">
                     <h1 className='text-[26px] font-[600]  text-white'>OUR VISION</h1>
                     <p className=' text-white my-3'>To create a business world with zero tolerance to excuses and enshrine due diligence to doing things.</p>
@@ -119,7 +119,7 @@ function App() {
           </section>
 
 
-          <section id='values' className='my-[6rem] md:my-[8rem] md:px-[10rem] px-[2rem]'>
+          <section id='values' className='my-[6rem] md:my-[8rem] lg:px-[10rem] px-[2rem]'>
               <p className='text-center text-[20px] font-[600] text-heading-color mb-10'>OUR VALUES</p>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                   <div className='flex items-center justify-center text-center flex-col shadow-md rounded-[12px] py-8 px-6 gap-[28px]' data-aos="fade-up" data-aos-delay="1">
@@ -143,7 +143,7 @@ function App() {
               </div>
           </section>
 
-          <section className='md:px-[10rem] px-[2rem]'>
+          <section className='lg:px-[10rem] px-[2rem]'>
             <h1 className='text-[24px] font-[600] text-center mb-10 text-heading-color'>
               INTRODUCING OUR SOFTWARE PRODUCT <br /> (THE MAJOR FEATURES)
             </h1>
@@ -254,7 +254,7 @@ function App() {
             </div>
           </section>
 
-          <section id='contact-us' className='my-[7rem] md:px-[10rem] px-[2rem] flex items-start md:items-center justify-between md:flex-row flex-col'>
+          <section id='contact-us' className='my-[7rem] lg:px-[10rem] px-[2rem] flex items-start md:items-center justify-between md:flex-row flex-col'>
               <div className='md:w-[40%] md:mt-0 mb-10'>
                   <p className='text-[20px] text-heading-color mb-5 font-[600]'>Contact Us From Here</p>
                   <p className='text-text-color'>You can contact us from here, you can write to us, call us or visit our service center, we will gladly assist you.</p>
