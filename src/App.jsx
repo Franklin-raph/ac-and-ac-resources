@@ -98,22 +98,22 @@ function App() {
 
           <section id='our-mission-vision' className='bg-[#28374C] mt-[6rem] py-[3rem] flex flex-col gap-[4rem]'>
             <div className='lg:px-[10rem] px-[2rem] flex md:flex-row-reverse items-center justify-between flex-col'>
-                <div className='md:w-[50%] md:mt-0 mb-10 text-center md:text-left border-l-4 border-primary-color pl-5' data-aos="fade-left" data-aos-delay="1">
+                <div className='md:w-[50%] md:mt-0 mb-10 text-center md:text-left md:border-l-4 border-primary-color pl-5' data-aos="fade-left" data-aos-delay="1">
                     <h1 className='text-[24px] font-[600]  text-white'>OUR MISSION</h1>
                     <p className=' text-white my-3'>As an honest establishment, we seek to create and promote great ideas, enduring facilities and satisfaction. We strive to grow our business with same honesty and integrity we use to mold our brands, with sustainability and great institution for all.</p>
                 </div>
                 <div className='w-[100%] sm:w-[75%] md:w-[45%]' data-aos="fade-right" data-aos-delay="100">
-                  <TbTargetArrow className='w-full text-[250px] text-white' />
+                  <TbTargetArrow className='w-full lg:text-[250px] text-[100px] text-white' />
                 </div>
             </div>
 
             <div className='flex items-center justify-between mx-auto md:flex-row flex-col lg:px-[10rem] px-[2rem]'>
-                <div className='md:w-[50%] text-center md:text-left border-r-4 border-primary-color pr-5'  data-aos="fade-right" data-aos-delay="1">
+                <div className='md:w-[50%] text-center md:text-left md:border-r-4 border-primary-color pr-5'  data-aos="fade-right" data-aos-delay="1">
                     <h1 className='text-[26px] font-[600]  text-white'>OUR VISION</h1>
                     <p className=' text-white my-3'>To create a business world with zero tolerance to excuses and enshrine due diligence to doing things.</p>
                 </div>
                 <div className='w-[100%] sm:w-[75%] md:w-[45%]' data-aos="fade-left" data-aos-delay="100">
-                  <TbEyeStar className='w-full text-[200px] text-white' />
+                  <TbEyeStar className='w-full lg:text-[200px] text-[100px] text-white' />
                 </div>
             </div>
           </section>
@@ -148,7 +148,7 @@ function App() {
               INTRODUCING OUR SOFTWARE PRODUCT <br /> (THE MAJOR FEATURES)
             </h1>
             
-            <div className='flex md:flex-row items-center justify-between mx-auto flex-col'>
+            <div className='flex md:flex-row items-center justify-between mx-auto flex-col-reverse'>
               <div className='md:w-[50%] md:mt-0 mb-10 text-center md:text-left'>
                   <h3 className='text-[24px] font-[600] text-heading-color'>Manage Your Business, Employees, and Students in one App!</h3>
                   <p className='text-text-color my-3'>Gotruhub, a product of AC & AC RESOURCES - a Multi-tenancy Digital service Platform built for close user groups. It is built to provide diverse services through three major features viz:</p>
@@ -171,16 +171,15 @@ function App() {
                     </button>
                   </div>
               </div>
-              <div className='bg-white flex flex-col justify-center items-center'>
-              {/* <img src="./images/thumbnail.png" alt="" className='w-[300px]' /> */}
-                <img src="./images/icon.svg" className='w-[90%] mx-auto mb-5' alt="" />
+              <div className='bg-white flex flex-col justify-center items-center mb-[4rem]'>
+                <img src="./images/icon.svg" className='lg:w-[90%] mx-auto mb-5' alt="" />
                 <p className='text-[24px] font-[600] text-heading-color'>GOTRUHUB</p>
               </div>
             </div>
-            <div className='flex items-center justify-center gap-[2rem] mt-[6rem]'>
+            <div className='flex items-center justify-center lg:gap-[2rem] gap-[10px] mt-[6rem]'>
               {
                 tabsArray.map(tab => (
-                  <div className={`flex items-center gap-[10px] ${tab.id === 'Trade' ? 'text-primary-color' : 'text-text-color'}`}>
+                  <div className={`flex items-center gap-[10px] ${tab === activeTab ? 'text-primary-color' : 'text-text-color'}`}>
                     <button onClick={() => setActiveTab(tab)}>{tab}</button>
                   </div>
                 ))
@@ -260,7 +259,7 @@ function App() {
                   <p className='text-text-color'>You can contact us from here, you can write to us, call us or visit our service center, we will gladly assist you.</p>
               </div>
               <div className='font-[500] flex gap-[1rem] flex-col text-text-color mb-[2.5rem]'>
-                  <p><i class="ri-phone-line text-[20px] text-primary-color"></i>: 123 - 456 - 789</p>
+                  <p><i class="ri-phone-line text-[20px] text-primary-color"></i>: +234 803 328 8394</p>
                   <p><i class="ri-mail-line text-[20px] text-primary-color"></i>: acandacresources@gmail.com</p>
                   <p><i class="ri-map-pin-line text-[20px] text-primary-color"></i>: Flat 3, Block D, Engr Ogochukwu Estate, <br /> Umushi St, Perm. Site, Ivite Awka, Awka South L.G.A., <br /> Anambra State, Nigeria.</p>
               </div>
