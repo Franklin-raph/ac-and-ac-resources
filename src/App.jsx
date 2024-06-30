@@ -10,9 +10,25 @@ import "aos/dist/aos.css";
 
 function App() {
 
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
   useEffect(() => {
     AOS.init();
     AOS.refresh();
+
+    const handleScroll = () => {
+      if (window.pageYOffset > 500) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
   const tabsArray = ['Gotru Monitor', 'Gotru Trade', 'Gotru Pass', 'Result check']
@@ -260,11 +276,14 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='fixed z-10 bottom-3 text-white right-6 bg-primary-color px-1 cursor-pointer rounded' onClick={() => {
-          scrollTo({ top: 0, behavior:'smooth' })
-        }}>
-          <i class="ri-arrow-up-s-line text-[24px]"></i>
-        </div>
+        {
+          showScrollTop &&
+          <div className='fixed z-10 bottom-3 text-white right-6 bg-primary-color px-1 cursor-pointer rounded' onClick={() => {
+            scrollTo({ top: 0, behavior:'smooth' })
+          }}>
+            <i class="ri-arrow-up-s-line text-[24px]"></i>
+          </div>
+        }
     </BrowserRouter>
   )
 }

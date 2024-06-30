@@ -15,7 +15,7 @@ p{
 }
 
 main{
-  background: linear-gradient(rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.418)), url('../images/business-professional.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/business-professional.jpg');
   background-position: top;
   background-size: cover;
 }
