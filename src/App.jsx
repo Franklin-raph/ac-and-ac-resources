@@ -57,7 +57,7 @@ function App() {
     <BrowserRouter>
         <nav className='flex items-center justify-between shadow-sm w-full bg-white z-10 px-[3rem] lg:px-[10rem] py-4'>
         <Link>
-          <img src="./images/logo.png" className='w-[60px]' alt="" />
+          <img src="./images/logo.png" className='md:w-[60px] w-[40px]' alt="" />
         </Link>
           <div className="togglers hidden text-[20px]">
             <i class="ri-menu-3-line"></i>
@@ -80,9 +80,9 @@ function App() {
         <button className='bg-primary-color text-white px-6 py-2 rounded-full font-[500]'>Get App</button>
       </nav>
       <div data-aos="fade-up">
-          <main className='flex items-center justify-between mx-auto md:flex-row flex-col-reverse lg:px-[10rem] px-[2rem] md:text-left text-center  py-[4rem]'>
+          <main className='flex items-center justify-between mx-auto md:flex-row flex-col-reverse lg:px-[10rem] md:px-[2rem] px-[10px] md:text-left text-center py-[4rem]'>
               <div className='md:w-[70%] md:mt-0 mt-10'>
-                  <h1 className='text-[36px] font-[600] text-white'>AC & AC RESOURCES</h1>
+                  <h1 className='text-[28px] md:text-[36px] font-[600] text-white'>AC & AC RESOURCES</h1>
                   <p className='my-3 text-white'>AC & AC RESOURCES is a business consulting, product marketing and currently introducing software solutions product called Gotruhub to her portfolio. We generate and develop business ideas, engage in product marketing and also offer corporate consultancy services.</p>
                   <div className='inline-flex gap-5 hero-btns flex-col sm:flex-row'>
                       <div className='bg-primary-color text-white px-6 py-3 cursor-pointer rounded-full font-[500]' onClick={() => {
@@ -97,7 +97,7 @@ function App() {
           </main>
 
           <section id='our-mission-vision' className='bg-[#28374C] py-[3rem] flex flex-col gap-[4rem]'>
-            <div className='lg:px-[10rem] px-[2rem] flex md:flex-row-reverse items-center justify-between flex-col'>
+            <div className='lg:px-[10rem] md:px-[2rem] px-[10px] flex md:flex-row-reverse items-center justify-between flex-col'>
                 <div className='md:w-[50%] md:mt-0 mb-10 text-center md:text-left md:border-l-4 border-primary-color md:pl-5' data-aos="fade-left" data-aos-delay="1">
                     <h1 className='text-[24px] font-[600]  text-white'>OUR MISSION</h1>
                     <p className=' text-white my-3'>As an honest establishment, we seek to create and promote great ideas, enduring facilities and satisfaction. We strive to grow our business with same honesty and integrity we use to mold our brands, with sustainability and great institution for all.</p>
@@ -142,7 +142,7 @@ function App() {
               </div>
           </section>
 
-          <section className='lg:px-[10rem] px-[2rem]'>
+          <section className='lg:px-[10rem] md:px-[2rem] px-[1rem]'>
             <h1 className='lg:text-[24px] font-[600] text-center mb-10 text-heading-color'>
               INTRODUCING OUR SOFTWARE PRODUCT <br /> (THE MAJOR FEATURES)
             </h1>
@@ -155,11 +155,11 @@ function App() {
                     <div className='flex items-center justify-center md:justify-start gap-5'>
                         <button className='bg-primary-color text-white px-5 py-2 rounded-full w-full flex justify-center items-center gap-2'>
                             <i class="ri-apple-line text-[20px]"></i>
-                            <p>Apple Store</p>
+                            <p className='hidden sm:block'>Apple Store</p>
                         </button>
                         <button className='bg-primary-color text-white px-5 py-2 rounded-full w-full flex justify-center items-center gap-2'>
                             <i class="ri-google-play-line text-[20px]"></i>
-                            <p>Google Play</p>
+                            <p className='hidden sm:block'>Google Play</p>
                         </button>
                     </div>
                     <button onClick={() => {
@@ -190,7 +190,7 @@ function App() {
                     <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[2rem]'>
                         <img src="./images/trade_img.svg" className='sm:w-[40%]' alt="" />
                         <div className='w-[100%]'>
-                            <p className='text-[32px] font-[500] mb-3'>{activeTab}</p>
+                            <p className='md:text-[32px] text-[24px] font-[500] mb-3'>{activeTab}</p>
                             <p className='text-[#6F7975]'>This is a  cooperative trading feature that is designed for cashless trading. It comes with a user friendly inventory management system for the Organization's shop, a wallet system for the students and also allows parents see the details of their wards financial transactions.This feature will bring our children up to speed with the prevailing technology, helps control pilfering, reckless spending & misappropriation of students funds by school guardians.</p>
                             <div className=''>
                                 <button onClick={() => {
@@ -206,7 +206,7 @@ function App() {
                     <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[2rem]'>
                         <img src="./images/go-tru-pass.svg" className='sm:w-[50%]' alt="" />
                         <div className='w-[100%]'>
-                            <p className='text-[32px] font-[500] mb-3'>{activeTab}</p>
+                            <p className='md:text-[32px] text-[24px] font-[500] mb-3'>{activeTab}</p>
                             <p className='text-[#6F7975]'>This is a feature smartly built to seamlessly upload properly secured results to the app users/students.</p>
                             <div className=''>
                                 <button onClick={() => {
@@ -222,7 +222,7 @@ function App() {
                     <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[2rem]'>
                         <img src="./images/go-tru-pass.svg" className='sm:w-[50%]' alt="" />
                         <div className='w-[100%]'>
-                            <p className='text-[32px] font-[500] mb-3'>{activeTab}</p>
+                            <p className='md:text-[32px] text-[24px] font-[500] mb-3'>{activeTab}</p>
                             <p className='text-[#6F7975]'>This feature Keeps track and gives accurate account of students school attendance and movements with the aid of GPS among other technologies. It reports in real time, students arrival and exit from school to  supervisors/guardians. Its incorruptible promptness and accuracy in reportage through SMS/Email helps to minimize security risks & curtails truancy amongst students. It as well keeps proper records of all that are pointed out above for reference purposes.</p>
                             <div className=''>
                                 <button onClick={() => {
@@ -238,7 +238,7 @@ function App() {
                     <div className='flex justify-between lg:items-start gap-[2rem] lg:text-left text-center w-[90%] flex-col lg:flex-row items-center mx-auto mt-[2rem]'>
                         <img src="./images/trade_img.svg" className='sm:w-[50%]' alt="" />
                         <div className='w-[100%]'>
-                            <p className='text-[32px] font-[500] mb-3'>{activeTab}</p>
+                            <p className='md:text-[32px] text-[24px] font-[500] mb-3'>{activeTab}</p>
                             <p className='text-[#6F7975]'>This feature has two ends, of which one is "Monitor Source" and the other which is "Monitor End". It is a personnel management feature that helps to monitor the employees as well as students to ensure due diligence in their discharge of duties/attend to classes to curtail truancy amongst students as the case maybe. It does this through electronic capturing and storage of data. It is built to ensure zero compromise in task and time attendance taking. This will in a long way ease the management stress in appraising personnel. It helps to minimize dereliction of duty and optimize output amongst members of staff.  It as well captures class attendance activities of students, stores all the information and transmit them to their assigned supervisors.</p>
                             <div className=''>
                                 <button onClick={() => {
@@ -273,6 +273,11 @@ function App() {
               <p className='text-[14px]'> Copyright &copy; since {new Date().getFullYear()} </p>
             </div>
           </div>
+        </div>
+        <div className='fixed z-10 bottom-3 text-white right-6 bg-primary-color px-1 cursor-pointer rounded' onClick={() => {
+          scrollTo({ top: 0, behavior:'smooth' })
+        }}>
+          <i class="ri-arrow-up-s-line text-[24px]"></i>
         </div>
     </BrowserRouter>
   )
