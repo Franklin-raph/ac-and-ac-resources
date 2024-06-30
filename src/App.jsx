@@ -15,42 +15,28 @@ function App() {
     AOS.refresh();
   }, []);
 
-  const aboutUsLinks = [
-    {
-      label:"About Thaka",
-      url:"#"
-    },
-    {
-      label:"Privacy Policy",
-      url:"#"
-    },
-    {
-      label:"Terms of use",
-      url:"#"
-    },
-    {
-      label:"Return Policy",
-      url:"#"
-    }
-  ]
-
-  const serviceLinks = [
-    {
-      label:"Pricing",
-      url:"#"
-    },
-    {
-      label:"Discounts",
-      url:"#"
-    },
-    {
-      label:"Report a Bug",
-      url:"#"
-    }
-  ]
-
   const tabsArray = ['Gotru Monitor', 'Gotru Trade', 'Gotru Pass', 'Result check']
   const [activeTab, setActiveTab] = useState(tabsArray[0])
+
+  function openNav(){
+    document.querySelector("nav ul").style.top = "200px";
+    document.querySelector(".ri-menu-3-line").style.display = "none";
+    document.querySelector(".ri-close-fill").style.display = "block";
+  }
+
+  function closeNav(){
+    document.querySelector("nav ul").style.top = "-200px";
+    document.querySelector(".ri-menu-3-line").style.display = "block";
+    document.querySelector(".ri-close-fill").style.display = "none";
+  }
+
+  useEffect(() => {
+    document.querySelectorAll('nav ul li').forEach(link => {
+      link.addEventListener('click', () => {
+        closeNav()
+      });
+    })
+  },[])
 
 
   return (
@@ -60,8 +46,8 @@ function App() {
           <img src="./images/logo.png" className='md:w-[60px] w-[40px]' alt="" />
         </Link>
           <div className="togglers hidden text-[20px]">
-            <i class="ri-menu-3-line"></i>
-            <i class="ri-close-fill hidden"></i>
+            <i class="ri-menu-3-line" onClick={openNav}></i>
+            <i class="ri-close-fill" onClick={closeNav}></i>
           </div>
         <ul className='flex items-center justify-between gap-7 text-[14px] text-gray-600'>
           <li>

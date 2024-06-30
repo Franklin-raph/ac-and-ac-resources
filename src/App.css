@@ -20,6 +20,10 @@ main{
   background-size: cover;
 }
 
+.ri-close-fill{
+  display: none;
+}
+
 
 @media screen and (max-width: 768px) {
   
@@ -44,5 +48,6 @@ main{
     width: 300px;
     margin: auto;
     transition: all 0.3s ease-in-out;
+    z-index: 99;
   }
 }
