@@ -55,7 +55,7 @@ function App() {
 
   return (
     <BrowserRouter>
-        <nav className='flex items-center justify-between shadow-sm w-full bg-white z-10 px-[3rem] lg:px-[10rem] py-4 mb-[4rem]'>
+        <nav className='flex items-center justify-between shadow-sm w-full bg-white z-10 px-[3rem] lg:px-[10rem] py-4'>
         <Link>
           <img src="./images/logo.png" className='w-[60px]' alt="" />
         </Link>
@@ -80,14 +80,14 @@ function App() {
         <button className='bg-primary-color text-white px-6 py-2 rounded-full font-[500]'>Get App</button>
       </nav>
       <div data-aos="fade-up">
-          <main className='flex items-center justify-between mx-auto md:flex-row flex-col-reverse lg:px-[10rem] px-[2rem]'>
-              <div className='md:w-[50%] md:mt-0 mt-10'>
-                  <h1 className='text-[36px] font-[600] text-heading-color'>AC & AC RESOURCES</h1>
-                  <p className='text-text-color my-3'>AC & AC RESOURCES is a business consulting, product marketing and currently introducing software solutions to her portfolio. We generate and develop business ideas, engage in product marketing and also offer corporate consultancy services.</p>
+          <main className='flex items-center justify-between mx-auto md:flex-row flex-col-reverse lg:px-[10rem] px-[2rem] md:text-left text-center  py-[4rem]'>
+              <div className='md:w-[70%] md:mt-0 mt-10'>
+                  <h1 className='text-[36px] font-[600] text-white'>AC & AC RESOURCES</h1>
+                  <p className='my-3 text-white'>AC & AC RESOURCES is a business consulting, product marketing and currently introducing software solutions product called Gotruhub to her portfolio. We generate and develop business ideas, engage in product marketing and also offer corporate consultancy services.</p>
                   <div className='inline-flex gap-5 hero-btns flex-col sm:flex-row'>
                       <div className='bg-primary-color text-white px-6 py-3 cursor-pointer rounded-full font-[500]' onClick={() => {
                       window.location.href = 'https://go-tru-hub.vercel.app/'
-                    }} >Get Started</div>
+                    }} >Get started with Gotruhub</div>
                   </div>
               </div>
               <div className='bg-white w-[100%] sm:w-[75%] md:w-[45%]'>
@@ -96,25 +96,24 @@ function App() {
               </div>
           </main>
 
-          <section id='our-mission-vision' className='bg-[#28374C] mt-[6rem] py-[3rem] flex flex-col gap-[4rem]'>
+          <section id='our-mission-vision' className='bg-[#28374C] py-[3rem] flex flex-col gap-[4rem]'>
             <div className='lg:px-[10rem] px-[2rem] flex md:flex-row-reverse items-center justify-between flex-col'>
-                <div className='md:w-[50%] md:mt-0 mb-10 text-center md:text-left md:border-l-4 border-primary-color pl-5' data-aos="fade-left" data-aos-delay="1">
+                <div className='md:w-[50%] md:mt-0 mb-10 text-center md:text-left md:border-l-4 border-primary-color md:pl-5' data-aos="fade-left" data-aos-delay="1">
                     <h1 className='text-[24px] font-[600]  text-white'>OUR MISSION</h1>
                     <p className=' text-white my-3'>As an honest establishment, we seek to create and promote great ideas, enduring facilities and satisfaction. We strive to grow our business with same honesty and integrity we use to mold our brands, with sustainability and great institution for all.</p>
                 </div>
-                <div className='w-[100%] sm:w-[75%] md:w-[45%]' data-aos="fade-right" data-aos-delay="100">
-                  <TbTargetArrow className='w-full lg:text-[250px] text-[100px] text-white' />
-                </div>
+                  <img src="./images/target.png" className='w-[180px] md:w-[280px] lg:ml-[160px]' alt="" data-aos="fade-right" data-aos-delay="100" />
             </div>
 
             <div className='flex items-center justify-between mx-auto md:flex-row flex-col lg:px-[10rem] px-[2rem]'>
-                <div className='md:w-[50%] text-center md:text-left md:border-r-4 border-primary-color pr-5'  data-aos="fade-right" data-aos-delay="1">
+                <div className='md:w-[50%] text-center md:text-left md:border-r-4 border-primary-color md:pr-5'  data-aos="fade-right" data-aos-delay="1">
                     <h1 className='text-[26px] font-[600]  text-white'>OUR VISION</h1>
                     <p className=' text-white my-3'>To create a business world with zero tolerance to excuses and enshrine due diligence to doing things.</p>
                 </div>
-                <div className='w-[100%] sm:w-[75%] md:w-[45%]' data-aos="fade-left" data-aos-delay="100">
+                <img src="./images/vision.png" className='w-[180px] md:w-[280px] lg:mr-[160px]' alt="" data-aos="fade-left" data-aos-delay="100" />
+                {/* <div className='w-[100%] sm:w-[75%] md:w-[45%]' data-aos="fade-left" data-aos-delay="100">
                   <TbEyeStar className='w-full lg:text-[200px] text-[100px] text-white' />
-                </div>
+                </div> */}
             </div>
           </section>
 
@@ -144,16 +143,16 @@ function App() {
           </section>
 
           <section className='lg:px-[10rem] px-[2rem]'>
-            <h1 className='text-[24px] font-[600] text-center mb-10 text-heading-color'>
+            <h1 className='lg:text-[24px] font-[600] text-center mb-10 text-heading-color'>
               INTRODUCING OUR SOFTWARE PRODUCT <br /> (THE MAJOR FEATURES)
             </h1>
             
             <div className='flex md:flex-row items-center justify-between mx-auto flex-col-reverse'>
               <div className='md:w-[50%] md:mt-0 mb-10 text-center md:text-left'>
-                  <h3 className='text-[24px] font-[600] text-heading-color'>Manage Your Business, Employees, and Students in one App!</h3>
-                  <p className='text-text-color my-3'>Gotruhub, a product of AC & AC RESOURCES - a Multi-tenancy Digital service Platform built for close user groups. It is built to provide diverse services through three major features viz:</p>
+                  <h3 className='lg:text-[24px] font-[600] text-heading-color'>Manage Your Business, Employees, and Students in one App!</h3>
+                  <p className='text-text-color my-3'>Gotruhub, a product of AC & AC RESOURCES - a Multi-tenancy Digital service Platform built for closed user groups. It is built to provide diverse services through three major features viz:</p>
                   <div>
-                    <div className='flex flex-col sm:flex-row items-center justify-center md:justify-start gap-5'>
+                    <div className='flex items-center justify-center md:justify-start gap-5'>
                         <button className='bg-primary-color text-white px-5 py-2 rounded-full w-full flex justify-center items-center gap-2'>
                             <i class="ri-apple-line text-[20px]"></i>
                             <p>Apple Store</p>
@@ -173,13 +172,13 @@ function App() {
               </div>
               <div className='bg-white flex flex-col justify-center items-center mb-[4rem]'>
                 <img src="./images/icon.svg" className='lg:w-[90%] mx-auto mb-5' alt="" />
-                <p className='text-[24px] font-[600] text-heading-color'>GOTRUHUB</p>
+                <p className='lg:text-[24px] font-[600] text-heading-color'>GOTRUHUB</p>
               </div>
             </div>
             <div className='flex items-center justify-center lg:gap-[2rem] gap-[10px] mt-[6rem]'>
               {
                 tabsArray.map(tab => (
-                  <div className={`flex items-center gap-[10px] ${tab === activeTab ? 'text-primary-color' : 'text-text-color'}`}>
+                  <div className={`flex items-center gap-[10px] ${tab === activeTab ? 'text-primary-color underline' : 'text-text-color'}`}>
                     <button onClick={() => setActiveTab(tab)}>{tab}</button>
                   </div>
                 ))

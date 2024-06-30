@@ -7,10 +7,17 @@
 
 html, body{
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 p{
   font-size: 15.008px;
+}
+
+main{
+  background: linear-gradient(rgba(0, 0, 0, 0.533), rgba(0, 0, 0, 0.418)), url('../images/business-professional.jpg');
+  background-position: top;
+  background-size: cover;
 }
 
 
